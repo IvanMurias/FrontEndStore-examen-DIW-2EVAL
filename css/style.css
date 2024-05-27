@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Poetsen One';
+    src: url(../fonts/PoetsenOne-Regular.ttf)
+    ;
+}
+:root{
+    --orange:#e29b31;
+    --white:#ffffff;
+    --lightpurple: #BE2CE7 ;
+    --darkpurple: #7a089a;
+
+    --primary_font:'Poetsen One', 'sans-serif';
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 65%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--lightpurple);
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 2rem;
+    font-family: var(--primary_font);
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 125rem;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+h1,h2,h3{
+    align-items: cener;
+    font-family: var(--primary_font);
+    color: var(--white);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo{
+    margin:2rem 0;
+ }
+
+.footer{
+    background-color: var(--darkpurple);
+    padding: 1rem 0;
+    margin-top: 2rem;
+ }
+ .footer_text{
+    font-family: var(--primary_font);
+    text-align: center;
+    font-size: 2rem;
+ }
+.nav_main{
+    background-color: var(--darkpurple);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+.navigation_link{
+    font-family:var(--primary_font);
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.navigation_link--active{
+    color: var(--orange);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+@media (min-width:764px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.product{
+background-color: var(--darkpurple);
+padding: 1rem;
+}
+
+.orange{
+    color: var(--orange);
+}
+
+
